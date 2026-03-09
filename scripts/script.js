@@ -73,7 +73,7 @@ camera.position.z = 3;
 // create the sphere
 const geometry = new THREE.SphereGeometry(1, 32, 32);
 const texture = new THREE.TextureLoader().load(
-  "https://threejs.org/examples/textures/land_ocean_ice_cloud_2048.jpg"
+  "../images/texture_earth.jpg"
 );
 const material = new THREE.MeshPhongMaterial({ map: texture });
 const globe = new THREE.Mesh(geometry, material);
