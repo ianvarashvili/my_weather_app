@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+  </head>
+  <body>
+    <div class="clouds">
+      <img class="cloud-1" src="images/clouds-1.png" alt="">
+      <img class="cloud-2 " src="images/clouds-1.png" alt="">
+    </div>
+    
+    <main class="main-wrapper">
+       <div class="heading">
+      <h1 class="title">Weather App</h1>
+ <canvas id="globe"></canvas> 
+ </div>
+      <input type="text" id="cityInput" placeholder="Enter a city..." />
+      <button id="searchBtn">Search</button>
+      <h2 id="cityName"></h2>
+      <div id="results"></div>
+    </main>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
